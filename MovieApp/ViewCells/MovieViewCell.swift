@@ -53,7 +53,6 @@ class MovieViewCell: UICollectionViewCell{
                     
                   self.favoriteButton.setImage(UIImage(systemName: "star.fill"), for: .normal)
                   self.favoriteButton.tintColor = .systemYellow
-                              
                   }else{
                   self.favoriteButton.setImage(UIImage(systemName: "star"), for: .normal)
                   self.favoriteButton.tintColor = .black
