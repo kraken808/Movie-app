@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="MovieApp" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="nmB-xR-z4B" id="cfN-EL-tUp"/>
+                <outlet property="view" destination="P53-Mc-HPU" id="7Ai-am-tnM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="P53-Mc-HPU">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="nmB-xR-z4B">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" red="0.050980392156862744" green="0.14509803921568626" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="n2E-oW-0Xr">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="3HK-dv-HVD">
+                    <rect key="frame" x="199" y="66" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="0.050980392156862744" green="0.14509803921568626" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="nmB-xR-z4B" firstAttribute="top" secondItem="XsK-Gj-1xy" secondAttribute="top" id="AhQ-A8-POY"/>
+                <constraint firstItem="nmB-xR-z4B" firstAttribute="leading" secondItem="XsK-Gj-1xy" secondAttribute="leading" id="QSZ-Uq-8pB"/>
+                <constraint firstItem="XsK-Gj-1xy" firstAttribute="bottom" secondItem="nmB-xR-z4B" secondAttribute="bottom" id="d3T-LL-rkY"/>
+                <constraint firstItem="XsK-Gj-1xy" firstAttribute="trailing" secondItem="nmB-xR-z4B" secondAttribute="trailing" id="qOv-9k-tZK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="XsK-Gj-1xy"/>
+            <point key="canvasLocation" x="100.00000000000001" y="82.366071428571431"/>
+        </view>
+    </objects>
+</document>
